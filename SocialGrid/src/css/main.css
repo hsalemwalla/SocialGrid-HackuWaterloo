@@ -1,0 +1,14 @@
+﻿body {
+
+}
+
+.collapsed {
+    height: 0px;
+}
+
+/* Override Jumbotron attributes */
+.jumbotron {
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
