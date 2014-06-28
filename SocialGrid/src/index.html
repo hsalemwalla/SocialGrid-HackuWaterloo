@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,9 +17,12 @@
 
     <!-- JQuery-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <!-- <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>-->
 
     <!-- JQuery-->
     <script src="js/layout.js"></script>
+
+    <script src="js/Popup.js"></script>
 
     <!-- Custom styles for this template -->
     <!-- <link href="main.css" rel="stylesheet"> -->
@@ -27,11 +30,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
 
+
 </head>
 
 <body>
-
-
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="intro_bar" class="jumbotron">
@@ -42,6 +44,14 @@
             <p><a class="btn btn-primary btn-sm" onclick="collapseIntro()" role="button">Dismiss</a></p>
         </div>
     </div>
+   
+    <div id="dialog" title="Choose your social platform" class="invisible">
+         <img class="iconsize" src="../Images/facebookIcon.png" />
+         <img class="iconsize" src="../Images/twitterIcon.png" />
+         <img class="iconsize" src="../Images/linkedIcon.png" />
+    </div>
+
+    <button id="opener" onclick="showDialog()">Open the dialog</button>
 
     <div class="container">
         <!-- Example row of columns -->
@@ -74,5 +84,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
 </body>
 </html>

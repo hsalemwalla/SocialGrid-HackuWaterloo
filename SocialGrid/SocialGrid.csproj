@@ -191,7 +191,7 @@
     <Content Include="Images\bullet.png" />
     <Content Include="Images\facebookIcon.png" />
     <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\linkedIcon.png.jpg" />
+    <Content Include="Images\linkedIcon.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
     <Content Include="Images\orderedList2.png" />
@@ -239,8 +239,10 @@
     <Content Include="src\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="src\index.html" />
     <Content Include="src\js\bootstrap.js" />
+    <Content Include="src\js\Popup.js" />
     <Content Include="src\js\layout.js" />
     <Content Include="src\css\main.css" />
+    <Content Include="src\test.html" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
