@@ -1,4 +1,4 @@
 ﻿
 function collapseIntro() {
-    $("#intro_bar").addClass("collapsed");
+    $("#intro_bar").hide();
 }
