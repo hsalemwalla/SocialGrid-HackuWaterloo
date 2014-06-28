@@ -1,14 +1,37 @@
-﻿body {
-
+﻿/* Padding for the nav bar */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
-
 .collapsed {
     height: 0px;
 }
 
+/* Jumbotron is the name of the intro bar*/
 /* Override Jumbotron attributes */
 .jumbotron {
     margin-bottom: 15px;
     padding: 10px;
+}
 
+/* Main grid container*/
+.layout {
+    margin-top: 25px
+}
+
+/* Individual grid */
+.network-grid {
+    height: 70vh;
+}
+
+/* For centering div contents*/
+div.center-contents {
+    text-align: center;
+}
+.col1-border {
+    border-right: 1px solid black;
+}
+
+.col3-border {
+    border-left: 1px solid black;
 }

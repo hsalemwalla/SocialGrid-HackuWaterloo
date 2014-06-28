@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -30,10 +30,13 @@
 </head>
 
 <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container navbar-header">
+        </div>
+    </div>
 
 
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- Main jumbotron for intro message -->
     <div id="intro_bar" class="jumbotron">
         <div class="container">
             <h1>Welcome to the Social Grid</h1>
@@ -43,23 +46,17 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container layout">
         <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Linkedin</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="row network-grid container-border">
+            <div class=" col-md-4 network-grid col1-border center-contents">
+                <a class="btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
             </div>
-            <div class="col-md-4">
-                <h2>Facebook</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-md-4 network-grid center-contents">
+                <a class=" btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
             </div>
-            <div class="col-md-4">
-                <h2>Twitter</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-md-4 network-grid col3-border center-contents">
+                <a class="btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
             </div>
         </div>
 
