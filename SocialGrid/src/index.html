@@ -24,6 +24,7 @@
 
    <!-- <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>-->
 
+    <!-- JQuery-->
     <script src="js/layout.js"></script>
     <script src="js/Popup.js"></script>
     <script src="js/twitter.js"></script>
@@ -55,8 +56,20 @@
             <p><a class="btn btn-primary btn-sm" onclick="collapseIntro()" role="button">Dismiss</a></p>
         </div>
     </div>
-    <!-------------------------------------->
+    <!--Facebook-->>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
 
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!--LinkedIn-->
+    <!-- <button id="linkedinButton" onclick="showLinkedin()">View Linkedin</button>-->
     <!-- Icon to show jumbotron -->
     <div id="intro_show_arrow" class="down-arrow" >
         <img class="iconsize opacity0 " onclick="showIntro()" src="assets/down_arrow.gif" />
@@ -75,7 +88,7 @@
             <div class="col-md-9 left-contents">Twitter</div>
         </div>
         <div class="row top30">
-            <div class="col-md-2"><img class="iconsize" src="assets/linkedIcon.png" /></div>
+            <div class="col-md-2"><img id="linkedinImage" class="iconsize" src="assets/linkedIcon.png" onclick="showLinkedin()"/></div>
             <div class="col-md-9 left-contents">LinkedIn</div>
         </div>
     </div>
@@ -102,7 +115,11 @@
                 <a class=" btn btn-default" onclick="showDialog(this)" role="button">Connect Network</a> 
             </div>
             <div id="col3" class="col-md-4 network-grid col3-border center-contents">
-                <a class="btn btn-default" onclick="showDialog(this)" role="button">Connect Network</>a
+                <a class="btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
+                <div id="linkedinContent">
+                    
+                </div>
+
             </div>
         </div>
 
