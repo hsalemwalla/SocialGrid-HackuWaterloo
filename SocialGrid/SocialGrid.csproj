@@ -231,6 +231,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="src\FBTesting.html" />
     <Content Include="src\index.html" />
     <Content Include="src\main.css" />
     <Content Include="ViewSwitcher.ascx" />
