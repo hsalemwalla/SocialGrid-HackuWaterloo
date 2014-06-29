@@ -35,3 +35,12 @@ div.center-contents {
 .col3-border {
     border-left: 1px solid black;
 }
+
+.iconsize {
+    width: 20px;
+    height:20px;
+}
+
+.invisible {
+    display:none;
+}

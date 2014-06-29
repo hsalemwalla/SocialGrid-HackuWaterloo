@@ -1,0 +1,3 @@
+﻿function showDialog() {
+    $("#dialog").dialog();
+}
