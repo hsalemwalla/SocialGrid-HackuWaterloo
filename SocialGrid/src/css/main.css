@@ -35,6 +35,7 @@ body {
 
 /* General CSS*/
 .invisible { display:none; }
+.verticalScroll { overflow:scroll; }
 
 .center-contents { text-align: center; }
 .left-contents { text-align: left; }
