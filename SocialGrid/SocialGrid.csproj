@@ -189,6 +189,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
+    <Content Include="src\assets\down_arrow.gif" />
     <Content Include="src\assets\facebookIcon.png" />
     <Content Include="Images\heroAccent.png" />
     <Content Include="src\assets\linkedIcon.png" />
@@ -262,6 +263,7 @@
     <Content Include="src\js\Popup.js" />
     <Content Include="src\js\layout.js" />
     <Content Include="src\css\main.css" />
+    <Content Include="src\js\twitter.js" />
     <Content Include="src\test.html" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />

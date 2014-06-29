@@ -1,4 +1,8 @@
 ﻿
 function collapseIntro() {
-    $("#intro_bar").hide();
+    $("#intro_bar").slideUp();
+}
+
+function showIntro() {
+    $("#intro_bar").fadeIn();
 }
