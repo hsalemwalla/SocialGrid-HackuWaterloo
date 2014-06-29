@@ -18,6 +18,9 @@
     <!-- JQuery-->
     <script src="jquery/jquery/jquery-2.1.1.js"></script>
     <script src="jquery/jquery-ui/jquery-ui.js"></script>
+    <link href="jquery/jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link href="jquery/jquery-ui/jquery-ui.structure.css" rel="stylesheet">
+    <link href="jquery/jquery-ui/jquery-ui.theme.css" rel="stylesheet">
 
    <!-- <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>-->
 
@@ -52,13 +55,29 @@
         </div>
     </div>
 
-    <div id="dialog" title="Choose your social platform" class="invisible">
-         <img class="iconsize" src="../Images/facebookIcon.png" />
-         <img class="iconsize" src="../Images/twitterIcon.png" />
-         <img class="iconsize" src="../Images/linkedIcon.png" />
+    <div id="dialog" title="Choose your social platform" class="container invisible" >
+        <div class="row top30">
+            <div class="col-md-2"><img class="iconsize" src="assets/facebookIcon.png" /></div>
+            <div class="col-md-9 left-contents">Facebook</div>
+        </div>
+        <div class="row top30">
+            <div class="col-md-2"><img class="iconsize" src="assets/twitterIcon.png" /></div>
+            <div class="col-md-9 left-contents">Twitter</div>
+        </div>
+        <div class="row top30">
+            <div class="col-md-2"><img class="iconsize" src="assets/linkedIcon.png" /></div>
+            <div class="col-md-9 left-contents">LinkedIn</div>
+        </div>
+        <!--
+        <p><img class="iconsize" src="assets/facebookIcon.png"/>&nbsp;Facebook</p>
+
+        <p><img class="iconsize" src="assets/twitterIcon.png"/>&nbsp;Twitter</p>
+
+        <p><img class="iconsize" src="assets/linkedIcon.png"/>&nbsp;LinkedIn</p>
+        -->
     </div>
 
-    <div class="container">
+    <div class="container top30">
         <!-- Example row of columns -->
         <div class="row network-grid container-border">
             <div class=" col-md-4 network-grid col1-border center-contents">

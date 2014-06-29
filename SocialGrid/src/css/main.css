@@ -19,28 +19,30 @@ body {
     margin-top: 25px
 }
 
-/* Individual grid */
+/* Individual grid boxes */
 .network-grid {
     height: 70vh;
 }
 
-/* For centering div contents*/
-div.center-contents {
-    text-align: center;
-}
-.col1-border {
-    border-right: 1px solid black;
-}
+.col1-border { border-right: 1px solid black; }
+.col3-border { border-left: 1px solid black; }
 
-.col3-border {
-    border-left: 1px solid black;
-}
-
+/* Dialog */
 .iconsize {
-    width: 20px;
-    height:20px;
+    width: 40px;
+    height:40px;
 }
 
-.invisible {
-    display:none;
-}
+/* General CSS*/
+.invisible { display:none; }
+
+.center-contents { text-align: center; }
+.left-contents { text-align: left; }
+.right-contents { text-align: right; }
+
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
