@@ -1,9 +1,9 @@
 ﻿
 function collapseIntro() {
-    $("#intro_bar").hide();
+    $("#intro_bar").slideUp();
 }
 
-
-function showLinkedin() {
-    $('#linkedinContent').html(' <script src="//platform.linkedin.com/in.js" type="text/javascript"></script> <script type="IN/JYMBII" data-format="inline"></script>');
+function showIntro() {
+    $("#intro_bar").fadeIn();
 }
+

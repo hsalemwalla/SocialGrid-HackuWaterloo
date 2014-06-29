@@ -26,8 +26,9 @@
 
     <!-- JQuery-->
     <script src="js/layout.js"></script>
-
     <script src="js/Popup.js"></script>
+    <script src="js/twitter.js"></script>
+    <script src="js/LinkedIn.js"></script>
 
     <!-- Custom styles for this template -->
     <!-- <link href="main.css" rel="stylesheet"> -->
@@ -39,14 +40,16 @@
 </head>
 
 <body>
+
+    <!-- Navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container navbar-header">
         </div>
     </div>
-
+    <!------------>
 
     <!-- Main jumbotron for intro message -->
-    <div id="intro_bar" class="jumbotron">
+    <div id="intro_bar" class="jumbotron bottom0">
         <div class="container">
             <h1>Welcome to the Social Grid</h1>
             <p>You can link to your social networks here, and keep up to date with all of them at once!</p>
@@ -54,7 +57,6 @@
             <p><a class="btn btn-primary btn-sm" onclick="collapseIntro()" role="button">Dismiss</a></p>
         </div>
     </div>
-
     <!--Facebook-->>
     <script>
         (function (d, s, id) {
@@ -68,48 +70,57 @@
     </script>
 
     <!--LinkedIn-->
-    
-  <!-- <button id="linkedinButton" onclick="showLinkedin()">View Linkedin</button>-->
+    <!-- <button id="linkedinButton" onclick="showLinkedin()">View Linkedin</button>-->
+    <!-- Icon to show jumbotron -->
+    <div id="intro_show_arrow" class="down-arrow" >
+        <img class="iconsize opacity0 " onclick="showIntro()" src="assets/down_arrow.gif" />
+    </div>
+    <!-------------------------------------->
 
-    
+
+    <!-- Dialog Content -->
     <div id="dialog" title="Choose your social platform" class="container invisible" >
         <div class="row top30">
             <div class="col-md-2"><img class="iconsize" src="assets/facebookIcon.png" /></div>
             <div class="col-md-9 left-contents">Facebook</div>
         </div>
         <div class="row top30">
-            <div class="col-md-2"><img class="iconsize" src="assets/twitterIcon.png" /></div>
+            <div class="col-md-2"><img class="iconsize" src="assets/twitterIcon.png" onclick="displayTwitterTimeline(this.id)"/></div>
             <div class="col-md-9 left-contents">Twitter</div>
         </div>
         <div class="row top30">
             <div class="col-md-2"><img id="linkedinImage" class="iconsize" src="assets/linkedIcon.png" onclick="showLinkedin()"/></div>
             <div class="col-md-9 left-contents">LinkedIn</div>
         </div>
-        <!--
-        <p><img class="iconsize" src="assets/facebookIcon.png"/>&nbsp;Facebook</p>
-
-        <p><img class="iconsize" src="assets/twitterIcon.png"/>&nbsp;Twitter</p>
-
-        <p><img class="iconsize" src="assets/linkedIcon.png"/>&nbsp;LinkedIn</p>
-        -->
     </div>
+    <!-------------------->
+
+    <!-- Twitter timeline -->
+    <div id="twitter_timeline" class="invisible">
+        <a class="twitter-timeline" href="https://twitter.com/hashtag/WorldCup" data-widget-id="483080639936077824">#WorldCup Tweets</a>
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+    </div>
+    <!---------------------->
 
     <div class="container top30">
         <!-- Example row of columns -->
         <div class="row network-grid container-border">
-            <div class=" col-md-4 network-grid col1-border center-contents">
-                <a class="btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
+            <div id="col1" class=" col-md-4 network-grid col1-border center-contents">
+                <!--<a class="btn btn-default" onclick="showDialog(this)" role="button">Connect Network</a>-->
+                <div id="twitter_timeline">
+                    <a class="twitter-timeline" href="https://twitter.com/hashtag/WorldCup" data-widget-id="483080639936077824">#WorldCup Tweets</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                </div> 
             </div>
-            <div class="col-md-4 network-grid center-contents">
-                <a class=" btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
+            <div id="col2" class="col-md-4 network-grid center-contents">
+                <a class=" btn btn-default" onclick="showDialog(this)" role="button">Connect Network</a> 
             </div>
-            <div class="col-md-4 network-grid col3-border center-contents">
-                <a class="btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
-                <div id="linkedinContent">
-                    
-                </div>
-
-            </div>
+            <div id="col3" class="col-md-4 network-grid col3-border center-contents">
+                <a class="btn btn-default" onclick="showDialog(this)" role="button">Connect Network</a>
+                  <div id="linkedinContent" class="verticalScroll contentSize">
+                        <div id="linkedinPostings"></div>
+                        <div id="linkedinStatus"></div>
+           
         </div>
 
         <hr>
@@ -126,3 +137,7 @@
 
 </body>
 </html>
+
+
+
+
