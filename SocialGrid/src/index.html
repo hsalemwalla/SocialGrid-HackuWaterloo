@@ -1,41 +1,107 @@
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Social Grid</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Main pageCSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- JQuery-->
+    <script src="jquery/jquery/jquery-2.1.1.js"></script>
+    <script src="jquery/jquery-ui/jquery-ui.js"></script>
+    <link href="jquery/jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link href="jquery/jquery-ui/jquery-ui.structure.css" rel="stylesheet">
+    <link href="jquery/jquery-ui/jquery-ui.theme.css" rel="stylesheet">
+
+   <!-- <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>-->
+
+    <!-- JQuery-->
+    <script src="js/layout.js"></script>
+
+    <script src="js/Popup.js"></script>
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="main.css" rel="stylesheet"> -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+
 </head>
 
 <body>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-           
-        }(document, 'script', 'facebook-jssdk'));
-
-
-        FB.ui({
-            method: 'feed',
-            link: 'https://developers.facebook.com/docs/',
-            caption: 'An example caption',
-        }, function (response) { });
-
-    </script>
-
-
-    <div>
-        <h3>Here is your activity and a sample like box</h3>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container navbar-header">
+        </div>
     </div>
 
-    <div class="fb-activity" data-site="developers.facebook.com/hamrit.sidhu" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>
 
-    <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+    <!-- Main jumbotron for intro message -->
+    <div id="intro_bar" class="jumbotron">
+        <div class="container">
+            <h1>Welcome to the Social Grid</h1>
+            <p>You can link to your social networks here, and keep up to date with all of them at once!</p>
+            <p>Click the add button below to connect your first social network.</p>
+            <p><a class="btn btn-primary btn-sm" onclick="collapseIntro()" role="button">Dismiss</a></p>
+        </div>
+    </div>
 
-    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+    <div id="dialog" title="Choose your social platform" class="container invisible" >
+        <div class="row top30">
+            <div class="col-md-2"><img class="iconsize" src="assets/facebookIcon.png" /></div>
+            <div class="col-md-9 left-contents">Facebook</div>
+        </div>
+        <div class="row top30">
+            <div class="col-md-2"><img class="iconsize" src="assets/twitterIcon.png" /></div>
+            <div class="col-md-9 left-contents">Twitter</div>
+        </div>
+        <div class="row top30">
+            <div class="col-md-2"><img class="iconsize" src="assets/linkedIcon.png" /></div>
+            <div class="col-md-9 left-contents">LinkedIn</div>
+        </div>
+        <!--
+        <p><img class="iconsize" src="assets/facebookIcon.png"/>&nbsp;Facebook</p>
 
-    <div class="fb-facepile" data-href="https://www.facebook.com/FacebookDevelopers" data-max-rows="1" data-colorscheme="light" data-size="medium" data-show-count="true"></div>
+        <p><img class="iconsize" src="assets/twitterIcon.png"/>&nbsp;Twitter</p>
+
+        <p><img class="iconsize" src="assets/linkedIcon.png"/>&nbsp;LinkedIn</p>
+        -->
+    </div>
+
+    <div class="container top30">
+        <!-- Example row of columns -->
+        <div class="row network-grid container-border">
+            <div class=" col-md-4 network-grid col1-border center-contents">
+                <a class="btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
+            </div>
+            <div class="col-md-4 network-grid center-contents">
+                <a class=" btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
+            </div>
+            <div class="col-md-4 network-grid col3-border center-contents">
+                <a class="btn btn-default" onclick="showDialog()" role="button">Connect Network</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; Social Grid 2014</p>
+        </footer>
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script> -->
 
 </body>
 </html>
-
